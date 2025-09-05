@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Galería Fotográfica Accesible</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body onload="inicializarGaleria()">
+  <h1>Galería Fotográfica Interactiva</h1>
+  <p>Usa el ratón o el teclado (tab ↹ y enter) para interactuar con las imágenes.</p>
+
+  <div class="galeria">
+    <figure>
+      <img src="img/foto1.jpg" alt="Montaña nevada con cielo azul">
+      <figcaption>Montañas</figcaption>
+    </figure>
+    <figure>
+      <img src="img/foto2.jpg" alt="Playa tropical con palmeras">
+      <figcaption>Playa</figcaption>
+    </figure>
+    <figure>
+      <img src="img/foto3.jpg" alt="Ciudad iluminada de noche">
+      <figcaption>Ciudad nocturna</figcaption>
+    </figure>
+    <figure>
+      <img src="img/foto4.jpg" alt="Bosque verde con sendero">
+      <figcaption>Bosque</figcaption>
+    </figure>
+    <figure>
+      <img src="img/foto5.jpg" alt="Desierto con dunas de arena">
+      <figcaption>Desierto</figcaption>
+    </figure>
+    <figure>
+      <img src="img/foto6.jpg" alt="Lago rodeado de montañas">
+      <figcaption>Lago</figcaption>
+    </figure>
+  </div>
+
+  <!-- Imagen ampliada -->
+  <div id="visor" class="visor" aria-hidden="true">
+    <img id="imagenGrande" alt="">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
